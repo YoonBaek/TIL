@@ -15,7 +15,9 @@ Great Thanks!
 # My Environment
 OS X Big Sur with Apple Silicon  
 but Go is global!  
-Window10 / Mac OS / Linux versions are available.
+Window10 / Mac OS / Linux versions are available.  
+
+IDE : Visual Studio Code is convenient!
 
 # Install Go
 Download Go Easily @[Golang official website](https://golang.org/dl/)  
@@ -32,3 +34,16 @@ This is Rosetta-Free Version.
 (Newest for now 2021/03/26)
 
 Golang offers M1 Silicon Version since 1.16.
+
+# Settings
+Make directory for GOPATH  
+This folder is your workspace in go.
+``` zsh
+mkdir $HOME/go
+```
+Setting gopath...
+``` zsh
+cd $HOME/go
+mkdir pkg bin src
+```
+Now you're good to "Go"!
