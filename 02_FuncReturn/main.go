@@ -17,6 +17,10 @@ func main() {
 	// now you have return
 	fmt.Println(math.Floor(2.75))
 	fmt.Println(strings.Title("now this returns."))
+	// see the answer of poolpuzzle quiz
+	// you can ignore this.
+	// but in same package, you can import without the uppercase
+	poolpuzzle()
 }
 
-// if you want to compare, make line 16-17 comments.
+// if you want to compare, make line 18-19 comments.
