@@ -14,6 +14,7 @@ func main() {
 	// this returns nothing
 	math.Floor(2.75)
 	strings.Title("this returns nothing.") // Make first letter uppercase
+
 	// now you have return
 	fmt.Println(math.Floor(2.75))
 	fmt.Println(strings.Title("now this returns."))

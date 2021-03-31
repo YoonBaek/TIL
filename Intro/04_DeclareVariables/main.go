@@ -1,6 +1,6 @@
 // Author : Github YoonBaek
 // Golang is a static language.
-// You have to tell Go the type of the varibles, unlike Python
+// Unlike Python, You have to tell Go the type of the varibles
 package main
 
 import "fmt"
@@ -51,5 +51,5 @@ func main() {
 }
 
 // there are two ways of declaring variables,
-// but both ways are used frequenty.
+// but both ways are used frequently.
 // Get used to it!
