@@ -2,7 +2,6 @@
 package main
 
 import (
-	"fmt"
 	. "fmt"
 )
 
@@ -21,7 +20,7 @@ func main() {
 	// We can manage this by fmt.Printf()
 	Printf("%.2f litters needed\n", area/paintArea) // looks good.
 	// or we can save this as string variable by fmt.Sprintf()
-	resultString := fmt.Sprintf("%.2f litters needed", area/paintArea)
+	resultString := Sprintf("%.2f litters needed", area/paintArea)
 	Println(resultString)
 
 	// Formatting Verbs.
