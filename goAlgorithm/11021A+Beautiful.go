@@ -10,11 +10,10 @@ import (
 )
 
 func main() {
-	r := bufio.NewReader(os.Stdin)
-	w := bufio.NewWriter(os.Stdout)
+	r, w := bufio.NewReader(os.Stdin), bufio.NewWriter(os.Stdout)
 
-	var t, a, b, i int
-	Fscanln(r, &t)
+	var n int
+	Fscanln(r, &n)
 
 	for i < t {
 		i++
