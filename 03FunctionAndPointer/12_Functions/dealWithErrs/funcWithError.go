@@ -10,5 +10,10 @@ import (
 
 func main() {
 	err := errors.New("height can't be negative")
-	Println(err.Error())
+	Println(err.Error()) // Println(err) is also possible due to builtin function.
+
+	// Error with value
+	errf := Errorf("A height of %.2f is invalid.", -2.0)
+	// this returns error, not print error
+	Println(errf) // same as Println(errf.Error())
 }
