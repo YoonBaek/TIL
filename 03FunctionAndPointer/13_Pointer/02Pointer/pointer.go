@@ -38,4 +38,12 @@ func main() {
 	// Short Declaration is also possible
 	myBoolPointer := &myBool
 	fmt.Println(myBoolPointer)
+
+	// See the value of the adress' variable.
+	// We call this value at.
+	fmt.Println(*myIntPointer, *myBoolPointer)
+
+	// Change the value of the variable.
+	*myIntPointer = 9
+	fmt.Println(myInt) // myInt changed to 9
 }
