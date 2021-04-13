@@ -15,3 +15,10 @@ Compiled binary packages are saved.
 
 # 3. src
 Go source code is located.
+
+# Package naming conventions
+1. Only lowercase letter is recommended for package name.
+2. If clear, you can use shorter word. ex) function -> func
+3. Only one word is recommended. If multi-word is enevitable, use no underline or uppercase.  
+ex) strconv
+4. If package name and variable name make shadowing, don't use the variable name.
