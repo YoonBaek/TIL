@@ -15,6 +15,7 @@ import (
 func main() {
 	args := os.Args[1:]
 	sum := 0.0
+	// args가 없으면 에러를 반환하고 종료
 	errNoValue := errors.New("input please")
 	if len(args) == 0 {
 		log.Fatal(errNoValue)
