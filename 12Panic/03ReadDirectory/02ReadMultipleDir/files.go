@@ -14,7 +14,7 @@ func count(start int, end int) {
 	if start < end {
 		count(start+1, end)
 	}
-	// 재귀함수에서 어떤 함수가 먼저 끝나는지 알 수 있습니다.
+	// 재귀함수에서 어떤 함수가 먼저 끝나는지   알 수 있습니다.
 	fmt.Printf("Returning from count(%d, %d)\n", start, end)
 }
 
