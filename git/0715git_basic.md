@@ -23,21 +23,29 @@
 
 ## Git 관리
 
+### Git 시작
+
 ``` zsh
-git init 
+$ git init 
 ```
 
 ### 스냅샷
 
 ```zsh
-git add .
+$ git add .
 # git commit -m "message"
-git commit -m 'first commit'
+$ git commit -m 'first commit'
 ```
 
 ### 원격 저장소와 연결 및 업로드
 
 ```zsh
-git remote add origin https://github.com/USERNAME/repositoryNAME.git
-git push origin main
+$ git remote add origin https://github.com/USERNAME/repositoryNAME.git
+$ git push origin main
 ```
+
+```zsh
+$ git log
+$ git status
+```
+
