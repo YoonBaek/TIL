@@ -32,6 +32,7 @@ $ git init
 ### 스냅샷
 
 ```zsh
+# git add 현재 위치
 $ git add .
 # git commit -m "message"
 $ git commit -m 'first commit'
