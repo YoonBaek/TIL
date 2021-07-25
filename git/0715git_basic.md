@@ -72,6 +72,8 @@
 
 * 모든 Commit에는 작성자의 서명이 필요
 
+* commit은 의미 있는 작업인 한에서 세부적으로 남기는게 리팩토링에도 좋다.
+
   * 도장을 만들어 둡시다.
 
     ```zsh
@@ -104,7 +106,7 @@
   ```zsh
   $ git log
 
-### 원격 저장소와 연결 및 업로드
+### $ git remote add : 원격 저장소와 연결 및 업로드
 
 ```zsh
 $ git remote add origin https://github.com/USERNAME/repositoryNAME.git
@@ -116,7 +118,7 @@ $ git log
 $ git status
 ```
 
-### 변경사항 다운로드
+### $ git pull : 변경사항 다운로드
 
 ```zsh
 # 해당 repo와 연결된 인가 받은 사람들만 업로드, 다운로드 가능
@@ -125,3 +127,64 @@ $ git pull origin <branch>
 $ git clone <URL>
 ```
 
+### .git ignore : 변경사항 추적 그만 두기
+
+* .gitignore 파일 활용
+
+  ```
+  $ code .gitignore
+  
+  # gitignore 파일 내에서 해당 파일의 위치를 입력
+  # misc
+  .DS_store
+  ```
+
+### $ git diff : 로컬에서 스테이지와의 변동사항 확인하기.
+
+* git diff 실행시 아래와 같이 변동사항이 +-로 출력되어 확인할 수 있음.
+
+  ```sh
+  diff --git a/git/0715git_basic.md b/git/0715git_basic.md
+  index 8897ce0..0201b6f 100644
+  --- a/git/0715git_basic.md
+  +++ b/git/0715git_basic.md
+  @@ -104,7 +104,7 @@
+     ```zsh
+     $ git log
+  
+  -### 원격 저장소와 연결 및 업로드
+  +### $ git remote add : 원격 저장소와 연결 및 업로드
+  
+   ```zsh
+   $ git remote add origin https://github.com/USERNAME/repositoryNAME.git
+  @@ -116,7 +116,7 @@ $ git log
+   $ git status
+   ```
+  
+  -### 변경사항 다운로드
+  +### $ git pull : 변경사항 다운로드
+  
+   ```zsh
+   # 해당 repo와 연결된 인가 받은 사람들만 업로드, 다운로드 가능
+  @@ -125,3 +125,20 @@ $ git pull origin <branch>
+   $ git clone <URL>
+   ```
+  
+  +### .git ignore : 변경사항 추적 그만 두기
+  +
+  +* .gitignore 파일 활용
+  +
+  +  ```
+  +  $ code .gitignore
+  +
+  +  # gitignore 파일 내에서 해당 파일의 위치를 입력
+  +  # misc
+  +  .DS_store
+  +  ```
+  +
+  +### $ git diff : 로컬에서 스테이지와의 변동사항 확인하기.
+  +
+  +* git diff
+  ```
+
+  
