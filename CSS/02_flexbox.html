@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="02_flexbox.css">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      /* 0. 정렬하고자 하는 부모요소(flex container)에 선언 */
+      display: flex;
+      /* 인라인 플랙스는 내부의 요소만큼만 차지 하늘색에 해당*/
+      display: inline-flex;
+      display: flex; /*원복*/
+      /* 1. 메인축 방향 설정 디폴트*/
+      flex-direction: row; 
+      /* reverse */
+      flex-direction: row-reverse;
+      /* 축방향 변경 */
+      flex-direction: column;
+
+      /* 2. 컨테이너 박스를 튀어 나가는 애들은 한줄 배치를 해제하고
+         새로운 줄을 생성해서 배치*/
+      flex-wrap: wrap;
+      /* 넘치면 다음 줄을 생성하지 않고 오히려 전 줄에서 생성 */
+      flex-wrap: wrap-reverse;
+      /* 3. flex-direction + flex-wrap의 short hand */
+      flex-flow: column wrap;
+      
+      flex-direction: row;
+      flex-wrap: nowrap;
+      /* 4. 메인축 정렬 */
+      justify-content: flex-start;
+      /* justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around;
+      justify-content: space-evenly; */
+
+      /* 5. 교차축 정렬 */
+      align-items: stretch;
+      /* align-items: flex-start;
+      align-items: center;
+      align-items: flex-end; */
+      /* align-items: baseline; */
+    
+    }
+    /* 6. 교차축 개별 정렬 */
+    /* 부모 바깥에서 개별 정렬 */
+    .item1 {
+      align-self: flex-start;
+      /* 순서 설정이 가능 */
+      /* 기본 : 0 */
+      /* order 값이 작을 수록 앞으로 정렬 기본값(0) */
+      /* 1로 설정하면 0들 뒤인 맨 뒤로 감 */
+      order: 1;
+      /* flex-grow : 남은 공간에 대한 등분 배분 */
+      flex-grow: 1;
+    }
+    
+    .item2 {
+      align-self: center;
+      flex-grow: 1;
+    }
+
+    .item3 {
+      align-self: flex-end;
+    }
+    </style>
+</head>
+<body>
+  <div class="base">
+    <h2>Flex</h2>
+    <hr>
+    <div class="box flex-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+      <div class="item9">9</div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+////
+<style>
+  .flex-container {
+    justify-content: flex-start;
+  }
+</style>

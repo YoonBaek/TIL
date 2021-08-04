@@ -1,0 +1,42 @@
+/* 수정하지 마시오. */
+
+body {
+    margin: 5rem auto;
+    background-color: darkslategray;
+    color: white;
+  }
+  
+  .base {
+    margin: 10px auto;
+    padding: 20px auto;
+    border: 10px solid yellow;
+  }
+  
+  .base h2 {
+    text-align: center;
+  }
+  
+  .base h3 {
+    text-align: center;
+  }
+  
+  .box {
+    border: 10px solid lightblue;
+    height: 600px;
+  }
+  
+  .base > .box > div {
+    padding: 20px 10px;
+    border: 5px solid white;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .base > .box > div:nth-child(odd) {
+    background: orange;
+  }
+  
+  .base > .box > div:nth-child(even) {
+    background: green;
+  }
+  
